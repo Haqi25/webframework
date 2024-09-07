@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(89.5deg, rgba(131,204,255,1) 0.4%, rgba(66,144,251,1) 100.3%);
+}
+.container {
+    background: #fff;
+    padding: 30px;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.container .text {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #292d2e, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container form .identitas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+form .identitas .input-data {
+    position: relative;
+    width: calc(50% - 10px); /* Lebar yang cukup untuk dua elemen per baris */
+    margin-bottom: 15px; /* Memberi jarak bawah untuk mencegah nabrak */
+}
+
+.input-data input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-data label {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgba(0,0,0,0.5);
+}
+
+.input-data input:focus ~ label,
+.input-data input:not(:placeholder-shown) ~ label {
+    transform: translateY(-18px);
+    font-size: 14px;
+    color: #0072ff;
+}
+
+.input-data input:focus {
+    border-color: #0072ff;
+}
+
+/* Styling untuk elemen full-width seperti textarea */
+.textarea textarea {
+    width: 100%;
+    height: 120px;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    resize: vertical;
+}
+
+
+
+/* Jarak antar input dengan margin */
+form .form-row {
+    margin-top: 15px; /* Memberi jarak atas antar baris */
+}
+.jenis-kelamin{
+    color: #0072ff;
+    font-size: 16px;
+}
+
+.gender-options, .form-group {
+    margin-bottom: 20px; /* Memberi jarak bawah antar elemen */
+    font-size: 14px;
+}
+
+form .tombol-kirim button {
+    width: 25%;
+    padding: 15px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form .tombol-kirim button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+
+/* Styling untuk bagian Jenis Kelamin */
+.gender-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px; /* Tambahkan margin untuk jarak lebih antar radio button */
+    
+}
+.gender-options label {
+    margin-right: 8px;
+    color: #0072ff;
+    
+}
+.kelas label{
+    color: #0072ff;
+    font-size: 16;
+}
+
+/* Styling untuk select box Kelas */
+form select {
+    margin-top: 8px;
+    padding: 8px; /* Tambahkan padding agar select box lebih besar */
+    border-color: #0072ff;
+}
+
+/* Full-width untuk elemen tertentu */
+.macamkelas {
+    width: 100%;
+    box-shadow: #0072ff;
+    margin-bottom: 15px;
+    
+}
+.textarea {
+    margin-bottom: 20px; /* Memberi jarak bawah antar elemen */
+}
+
+.textarea label {
+    font-size: 16px;
+    color: #0072ff; /* Warna teks label */
+    display: block; /* Tampilkan label sebagai block untuk berada di atas textarea */
+    margin-bottom: 8px; /* Memberikan jarak bawah antara label dan textarea */
+}
+
+.textarea textarea {
+    width: 100%;
+    
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.textarea textarea:focus {
+    border-color: #0072ff;
+}
+
